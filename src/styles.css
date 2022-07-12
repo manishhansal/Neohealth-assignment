@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
+}
