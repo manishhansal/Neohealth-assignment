@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Timer } from "./Timer";
 
 export const Todo = () => {
   const [form, setForm] = useState({
@@ -61,10 +62,10 @@ export const Todo = () => {
             )}
             {item.completed ? (
               <s>
-                <h2>{item.time}</h2>
+                <Timer time={item.time} />
               </s>
             ) : (
-              <h2>{item.time}</h2>
+              <Timer time={item.time} status={item.completed} />
             )}
             <button onClick={() => handleToggle(item)}>Complete</button>
           </div>
